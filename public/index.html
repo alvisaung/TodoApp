@@ -1,0 +1,48 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <style>
+    body{
+      background-color: rgb(248, 237, 138);
+      margin-top: 50px;
+      margin-left:500px;
+      width: 600px;
+      padding: 100px;
+      font-size: 25px;
+      font-family: 'Poiret One', cursive;
+    }
+  </style>
+  
+   <body>
+  <center><h1>Todo List<i class="material-icons">check</i></h1></center>
+    
+    <div>
+    <button onclick="handlers.toggleAll()">Toggle All</button>
+     </div>
+    
+     <div> 
+       <button onclick="handlers.addTodo()">Add</button>
+       <input id="addTodoTextInput" type="text"> 
+     </div>
+    
+     <div>
+       <button onclick="handlers.changeTodo()">Change Todo</button>
+       <input id="changeTodoPositionInput" type="number">
+       <input id="changeTodoTextInput" type="text">
+     </div>
+    
+     <div>
+       <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+       <input id="toggleCompletedPositionInput" type="number">
+     </div>
+    
+    <ul>
+    </ul>
+     <script src="./js/todo.js"></script>
+  </body>
+
+</html>
